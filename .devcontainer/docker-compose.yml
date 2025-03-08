@@ -1,0 +1,11 @@
+version: "3"
+services:
+  local.dev:
+    image: alpl/obsidian.plugins.${PLUGIN_NAME}:${NODE_VERSION}
+    build:
+      context: .
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+        PLUGIN_NAME: ${PLUGIN_NAME}
+    volumes:
+      - ./../plugins/${PLUGIN_NAME}:/data/app
