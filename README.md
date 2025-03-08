@@ -7,10 +7,10 @@ Container for all plugins I use or contribute to created for easier maintainabil
 
 Run dev container with compatible node version (menu selection)
 ```bash
-.\.devcontainer\run.ps1
+.\.devcontainer\build.ps1
 ```
 
 Run dev container for 'File Explorer Note Count' plugin
 ```bash
-.\.devcontainer\run.ps1 -PluginName "File Explorer Note Count"
+.\.devcontainer\build.ps1 -PluginName "File Explorer Note Count"
 ```

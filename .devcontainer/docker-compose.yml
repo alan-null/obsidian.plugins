@@ -9,3 +9,4 @@ services:
         PLUGIN_NAME: ${PLUGIN_NAME}
     volumes:
       - ./../plugins/${PLUGIN_NAME}:/data/app
+    command: /bin/bash -c "if [ \"${RUN_BUILD}\" = \"true\" ]; then ${BUILD_CMD}; else /bin/bash; fi"
