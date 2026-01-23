@@ -1,3 +1,6 @@
 [submodule "plugins/file-explorer-note-count"]
 	path = plugins/file-explorer-note-count
 	url = git@github.com:Extensions-Vault/file-explorer-note-count.git
+[submodule "plugins/iconic"]
+	path = plugins/iconic
+	url = git@github.com:Extensions-Vault/iconic.git
