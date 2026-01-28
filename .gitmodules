@@ -4,3 +4,6 @@
 [submodule "plugins/iconic"]
 	path = plugins/iconic
 	url = git@github.com:Extensions-Vault/iconic.git
+[submodule "plugins/obsidian-linter"]
+	path = plugins/obsidian-linter
+	url = git@github.com:Extensions-Vault/obsidian-linter.git
