@@ -15,16 +15,31 @@ Run dev container for 'File Explorer Note Count' plugin
 .\.devcontainer\build.ps1 -PluginName "File Explorer Note Count"
 ```
 
-## Setup
+## Submodule Management
 
-Add new submodule
+**Add new submodule**
 ```bash
 git submodule add git@github.com:Extensions-Vault/[PLUGIN].git .\plugins\[PLUGIN]
 ```
-Update tags
+
+**Update tags from base upstream**
 ```bash
-git remote add upstream https://github.com/gfxholo/[PLUGIN].git
-git remote -v
-git fetch upstream --tags
-git push origin main --tags
+git -C plugins/obsidian-linter remote add base git@github.com:platers/obsidian-linter.git
+git -C plugins/obsidian-linter fetch base --tags
+git -C plugins/obsidian-linter push origin master --tags
+```
+
+**List available tags**
+```bash
+git -C plugins/obsidian-linter tag
+```
+
+**Change tag version for module**
+```bash
+git -C plugins/obsidian-linter checkout 1.30.0
+```
+
+**Sync all submodules**
+```bash
+git submodule sync --recursive
 ```
